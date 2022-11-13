@@ -1,5 +1,136 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-        <h3> CATALOG CONTENT </h3>
+{% load static %}
+
+        <div id="about" class="shop">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div  class="shop_img">
+                     <figure><img src="{% static 'img/images.png' %}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-7 padding_right0">
+                  <div class="max_width">
+                     <div class="titlepage">
+                        <h2>Найкраще спорядження в нашому магазині</h2>
+                        <p>Ми самі займаємось підбором, замовленням та доставкою товарів. У нас демократична ціна на якісний товар, тому що немає жодних посередників в схемі</p>
+                        <a class="read_more" href="#">Купити зараз</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+        <div class="glasses">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <h2>Наші товари</h2>
+                     <p>Підібране спорядження британських, німецьких та італійських виробникив
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product01.png' %}" alt="#"/></figure>
+                     <h3 id="1">9000 <span class="blu">грн</span></h3>
+                     <p>Чоботи Пустеля (Британія)</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="1">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product02.png' %}" alt="#"/></figure>
+                     <h3 id="2">12000 <span class="blu">грн</span></h3>
+                     <p>Жакет зимовий тактичний</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="2">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product03.png' %}" alt="#"/></figure>
+                     <h3 id="3">3700 <span class="blu">грн</span></h3>
+                     <p>Рукавиці тактичні захисні</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="3">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product04.png' %}" alt="#"/></figure>
+                     <h3 id="4">9400 <span class="blu">грн</span></h3>
+                     <p>Годинник офіцерський GPS</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="4">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product05.png' %}" alt="#"/></figure>
+                     <h3 id="5">17000 <span class="blu">грн</span></h3>
+                     <p>Куртка камуфляж (зимова)</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="5">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product06.png' %}" alt="#"/></figure>
+                     <h3 id="6">13500 <span class="blu">грн</span></h3>
+                     <p>Полегшений бронік (3 класс)</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="6">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product07.png' %}" alt="#"/></figure>
+                     <h3 id="7">12550 <span class="blu">грн</span></h3>
+                     <p>Чоботи посилені (Британія)</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="7">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <div class="products">
+                     <figure><img src="{% static 'img/product08.png' %}" alt="#"/></figure>
+                     <h3 id="8">1450 <span class="blu">грн</span></h3>
+                     <p>Кепка тактична</p>
+                      <div class="add-to-cart">
+                     <input type="hidden" value="8">
+                     <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <a style="margin-bottom: 15px" class="read_more" href="#">Більше товарів</a>
+               </div>
+            </div>
+         </div>
+      </div>
 {% endblock content %}

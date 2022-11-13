@@ -1,5 +1,120 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-        <h3> CONTACT content </h3>
+{% load static %}
+
+         <div class="clients">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Шо кажуть наші клієнти</h2>
+                     <p>Це, звісно, жарт, але ми пишаємося нашим магазином та цінуємо кожного нашого клієнта</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="{% static 'img/our.png' %}" alt="#"/></figure>
+                                          <h3>Валерій Залужний</h3>
+                                          <p>То нарешті з'явилися нормальні хлопи а не якась голота. Купляю в них британські шкарпетки та радію шо ногі не мерзнуть. Вельмо рекомендую</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="{% static 'img/our2.png' %}" alt="#"/></figure>
+                                          <h3>Притула</h3>
+                                          <p>Байраткари то гарно али коли не має зимової одьожки та ще в захисному кольорі то сумно. Купив у бойзтойз німецького бушлату то дуже задоволений - ні холодно ні жарко. То не потієш і не мерзнеш зовсім. </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                       <div class="clients_box">
+                                          <figure><img src="{% static 'img/our3.png' %}" alt="#"/></figure>
+                                          <h3>Полковник Порошенко</h3>
+                                          <p>Взяв собі броніка, бо без броніка наразі з конфетами у потьомках не походиш. Почом знаєш шо за біса там носить. </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <i class='fa fa-angle-left'></i>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <i class='fa fa-angle-right'></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+        <div id="contact" class="contact">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <h3>Напишіть нам шось</h3>
+                        </div>
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Им'я" type="type" name="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Телефон" type="type" name="Phone Number">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email">
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactusmess" placeholder="Повідомлення" type="type" Message="Name">
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Відправити</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="map_section">
+               <div id="map">
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
 {% endblock content %}
