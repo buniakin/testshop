@@ -23,16 +23,16 @@
                                   </a>
                               </li>
                                 {% if not user.is_authenticated %}
-                                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Логін</a></li>
-                                  <li class="nav-item d_none"><a class="nav-link" href="#">Реєстрація</a></li>
+                                  <li class="nav-item d_none login_btn"><a class="nav-link" href="/account/entry">Логін</a></li>
+                                  <li class="nav-item d_none"><a class="nav-link" href="/account/reg">Реєстрація</a></li>
 
                                   <li class="nav-item d_none sea_icon"><a class="nav-link" href="/cart"><i class="fa fa-shopping-cart"></i></a></li>
                                   <li>
                                       <div id="cart-count" class="qty"> </div>
 
                                 {% else %}
-                                  <li class="nav-item d_none login_btn"><a class="nav-link" href="#">Вихід</a></li>
-                                  <li class="nav-item d_none"><a class="nav-link" href="#">Профіль</a></li>
+                                  <li class="nav-item d_none login_btn"><a class="nav-link" href="/account/exit">Вихід</a></li>
+                                  <li class="nav-item d_none"><a class="nav-link" href="/account/profile">Профіль</a></li>
                                 {% endif %}
                            </ul>
                         </div>
